@@ -1,0 +1,18 @@
+<div>
+    <div class="col-md-12" class="border-box" >
+        <h2 class="head">Users List Dropdown - Alphabetical Order</h2>
+    </div>
+
+    <div class="border-box">
+    <mat-form-field  appearance="legacy">
+    <mat-label>Select Users</mat-label>
+    <mat-select (selectionChange)="onUserSelect($event)">
+        <mat-option *ngFor="let user of usersList" [value]="user.id">
+        {{user.first_name}} {{user.last_name}}
+        </mat-option>
+    </mat-select>
+    </mat-form-field>
+    </div>
+
+</div>
+

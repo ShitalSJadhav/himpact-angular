@@ -1,0 +1,25 @@
+.backarrow{
+    cursor: pointer;
+    display: inline-flex;
+    margin: 0 0 0 0;
+  }
+  .head{
+    display: flex;
+    align-items: center;
+  }
+ 
+  .col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    font-weight: 600;
+    
+}
+.form-control-plaintext {
+    
+    color: #241954 !important;
+    font-family: "Open Sans" !important
+   
+}

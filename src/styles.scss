@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Open Sans" !important; color: #241954 !important; }
+h2.head {
+    color: #241954;
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0 0 0 0;
+    font-family: "Open Sans" !important
+  }
+  
+  .border-box {
+	margin: 0px 35px 15px;
+	padding: 8px 15px;
+	border: 1px solid rgba(206, 208, 225, 0.7);
+	box-sizing: border-box;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    
+}

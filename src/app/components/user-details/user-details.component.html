@@ -1,0 +1,38 @@
+<div class="col-md-12" class="border-box" >
+  <h2 class="head">
+    <span class="backarrow" (click)="navigateToUserView()"><mat-icon>arrow_back_ios</mat-icon></span>
+    <span>User Details</span>
+  </h2>
+</div>
+<div class="border-box" >
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img [src]="userDetails?.avatar" class="card-img" alt="..." style="width: 100%;
+        height: 100%;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">First Name :</label>
+            <div class="col-sm-6">
+              <input type="text" readonly class="form-control-plaintext" [value]="userDetails?.first_name">
+            </div>
+          </div>   
+
+          <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Last Name :</label>
+            <div class="col-sm-6">
+              <input readonly class="form-control-plaintext" [value]="userDetails?.last_name">
+            </div>
+          </div> 
+
+          <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Email :</label>
+            <div class="col-sm-6">
+              <input  readonly class="form-control-plaintext"  [value]="userDetails?.email">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
