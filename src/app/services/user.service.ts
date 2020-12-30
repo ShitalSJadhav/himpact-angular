@@ -1,5 +1,5 @@
+import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
-import { baseUrl } from "src/environments/environment";
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -12,10 +12,10 @@ export class UserService {
     private http: HttpClient,
   ) { }
   getUsers(): Observable<any> {
-    return this.http.get<any>(`${baseUrl}users`);
+    return this.http.get<any>(`${environment.baseUrl}users`);
   }
 
   getUserDetailsById(id:number): Observable<any> {
-    return this.http.get<any>(`${baseUrl}users/${id}`);
+    return this.http.get<any>(`${environment.baseUrl}users/${id}`);
   }
 }
