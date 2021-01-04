@@ -19,11 +19,7 @@ const routes: Routes = [
     component: UserDetailsComponent,
     pathMatch:'full'
   },
-  // { 
-  //   path: 'service-requests/:servicerequestid',
-  //   component:ServiceRequestsComponent ,
-  //   pathMatch:'full'
-  // },
+  
 ];
 
 @NgModule({

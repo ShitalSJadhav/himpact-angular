@@ -30,6 +30,7 @@ export class UserDetailsComponent implements OnInit {
   getUserDetails() {
     this.userApi.getUserDetailsById(this.id).subscribe((res) => {
       this.userDetails = res.data;
+      // let x=this.userDetails.firstName;
     });
   }
 
